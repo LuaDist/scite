@@ -1,7 +1,7 @@
 --- This file is part of LuaDist project
 
 name = "scite"
-version = "2.11"
+version = "3.2.1"
 
 desc = "SciTE is a SCIntilla based Text Editor."
 author = "Neil Hodgson"
@@ -10,8 +10,7 @@ url = "http://www.scintilla.org/SciTE.html"
 maintainer = "Peter Drahoš"
 
 depends = {
-	"scintilla >= 2.11",
+	"lua ~> 5.1",
+	"scintilla >= 3.2.1",
 }
--- 2DO: at least in Windows, set SciTE_HOME to directory containins
--- *.properties files, or place *.properties files in directory containing
--- scite.exe
+-- WARNING: Minor modifications include default SciTE_HOME path set to ../share/scite/properties and rename of SciLexer.DLL to libscilexer.dll in LuaDist installation
